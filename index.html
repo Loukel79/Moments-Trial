@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fffdfa" />
+  <title>Moments Prototype</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="phone" aria-label="Moments prototype">
+      <div class="bg-bubble bubble-top-right" aria-hidden="true"></div>
+      <div class="bg-bubble bubble-top-mid" aria-hidden="true"></div>
+      <div class="bg-bubble bubble-left-mid" aria-hidden="true"></div>
+      <div class="bg-bubble bubble-bottom-left" aria-hidden="true"></div>
+      <div class="bg-bubble bubble-bottom-right" aria-hidden="true"></div>
+      <div class="bg-bubble bubble-bottom-centre" aria-hidden="true"></div>
+
+      <header class="topline">
+        <div class="logo-wrap">
+          <img src="assets/moments-logo.png" alt="Moments" class="moments-logo" />
+          <p class="prototype-label">Prototype v0.1</p>
+        </div>
+        <button class="reset" type="button" id="resetBtn">Reset</button>
+      </header>
+
+      <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+      <p class="step-label" id="stepLabel"></p>
+
+      <section id="screen" class="screen" aria-live="polite"></section>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
